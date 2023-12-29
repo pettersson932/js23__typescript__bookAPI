@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.page__content {
+  padding: 5% 15%;
+}
+.bold {
+  font-weight: 900;
+}
+.paddBtm {
+  padding-bottom: 20px;
+}
+#overlay__book {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: gray;
+  justify-content: center;
+  align-items: center;
+}
+#overlayBook__content {
+  display: flex;
+  margin: 0 20%;
+  gap: 50px;
+}
+#overlayBook__content > * {
+  flex: 1;
+}
+#overlay__close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  cursor: pointer;
+}
+.overlay__leftCol {
+  border-left: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.overlay__rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+#booksList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.book__container {
+  flex: calc(25% - 20px);
+  cursor: pointer;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-left: 5px solid black;
+}
+.flex50 {
+  display: flex;
+  flex-wrap: wrap;
+  background: darkgray;
+}
+.flex50 > * {
+  flex: 50%;
+}
+.btnBuy {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  padding: 10px 20px;
+  color: white;
+  background: black;
+  justify-content: center;
+  cursor: pointer;
+}
+.btnBuy:hover {
+  background: darkgreen;
+}
